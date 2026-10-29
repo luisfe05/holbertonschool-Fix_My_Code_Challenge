@@ -1,17 +1,17 @@
 # Fix My Code Challenge
 
-Proyecto "Fix my code": se parte de código existente que tiene errores y se corrige sin reescribirlo desde cero. Cada tarea cambia solo las líneas necesarias para que el programa se comporte como indica el enunciado.
+## Description
+Starting from existing code that contains bugs, each task fixes it without rewriting it from scratch: only the lines needed to make the program behave as the task describes are changed.
 
-## Archivos y Tareas
+## Tasks
 
-| Tarea | Archivo | Error corregido |
+| Task | Description | File |
 | :--- | :--- | :--- |
-| **0. FizzBuzz** | `challenge/0-fizzbuzz.py` | La condición `% 3` se evaluaba antes que la de `% 3 and % 5`, así que 15 imprimía `Fizz`. Se invirtió el orden de las condiciones. |
-| **1. Print square** | `challenge/1-print_square.js` | `parseInt(..., 16)` leía el tamaño en base 16 (10 → 16). Se cambió a base 10. |
-| **2. Sort** | `challenge/2-sort.rb` | Se insertaba en `i - 1` (una posición antes). Se cambió a `i`. |
-| **3. User password** | `challenge/3-user.py` | El setter guardaba en `_password` en lugar de `__password`, y la validación comparaba el hash en mayúsculas contra uno guardado en minúsculas. |
-| **4. Double linked list** | `challenge/4-delete_dnodeint/` | Al borrar un nodo intermedio se enlazaba mal (`prev->prev` en vez de `prev->next`) y se leía `next` después de `free` (use-after-free). |
+| **0. FizzBuzz** | The `% 3` check ran before the `% 3 and % 5` check, so 15 printed `Fizz`. The order of the conditions was swapped. | `challenge/0-fizzbuzz.py` |
+| **1. Print square** | `parseInt(..., 16)` read the size in base 16 (10 became 16). Changed to base 10. | `challenge/1-print_square.js` |
+| **2. Sort** | The value was inserted at `i - 1` (one position too early). Changed to `i`. | `challenge/2-sort.rb` |
+| **3. User password** | The setter stored into `_password` instead of `__password`, and validation compared an uppercase hash against a lowercase stored one. | `challenge/3-user.py` |
+| **4. Double linked list** | Deleting a middle node linked the wrong pointers (`prev->prev` instead of `prev->next`) and read `next` after `free` (use-after-free). | `challenge/4-delete_dnodeint/` |
 
-## Autor
+## Author
 * **Luis Gonzalez** - Holberton School
-# holbertonschool-Fix_My_Code_Challenge
